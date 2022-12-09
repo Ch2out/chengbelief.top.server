@@ -1,0 +1,304 @@
+
+body {
+  /* min-width: 1282px; */
+  color: rgb(125, 82, 132);
+  position: relative;
+}
+/*  置顶按钮  */
+.btn {
+  display: block;
+  color: #5e69c9;
+  position: fixed;
+  right: 0;
+  bottom: 5vh;
+}
+
+/* 导航条 */
+.biao {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.biao > div {
+  display: flex;
+  align-items: center;
+}
+/*下拉款 */
+.la {
+  /* padding-top: 18px;
+  height: 40px; */
+  line-height: 50px;
+  padding: 13px;
+}
+.la > div {
+  width: 25px;
+  margin: 5px 0;
+  height: 2px;
+  background-color: rgb(194, 168, 231);
+}
+/* 三根线的变化 */
+.la:hover ~ .tan,
+.tan:hover {
+  display: block;
+  /* height: 70vh; */
+  /* transition: 2s; */
+}
+.la:hover .hen1 {
+  transform: rotate(35deg);
+  transition: 1.2s;
+}
+.la:hover .hen2 {
+  width: 0;
+  transition: 0.8s;
+}
+.la:hover .hen3 {
+  transform: rotate(-35deg);
+  transition: 1.2s;
+}
+.la .hen1,
+.la .hen3 {
+  transform: rotate(0deg);
+  transform-origin: left;
+  transition: 1.2s;
+}
+.biao > div:first-child > div:first-child {
+  /* cursor: pointer;  */
+  width: 175px;
+}
+/* 时间特效 */
+.biao > div:first-child > div {
+  margin-right: 2.2rem;
+}
+.biao > div:last-child {
+  font-size: 1.4rem;
+}
+/* 导航条的下拉列表 */
+.tan {
+  position: absolute;
+  left: 0px;
+  top: 50px;
+  height: 85vh;
+  width: 27vw;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #b8b8bc;
+  font-size: 4rem;
+  text-align: center;
+  display: none;
+  z-index: 2;
+}
+.lian {
+  margin-top: 3vw;
+}
+.lian > a {
+  display: inline-block;
+  /* https://klcxy.top/oss-manage-service/ossinfo/queryOssUrl?tbOssInfo.oiid=243 */
+  background-image: url(https://klcxy.top/oss-manage-service/ossinfo/queryOssUrl?tbOssInfo.oiid=243);
+  line-height: 85px;
+  width: 85px;
+  font-size: 1rem;
+  color: #000;
+  text-align: center;
+  margin: 0px 0.5rem;
+}
+
+/* 图片跑马灯 */
+.tuZhu {
+  height: 85vh;
+  /* width: 100%;
+  height: 100%; */
+}
+.tuZhu img {
+  height: 100%;
+  width: 100%;
+}
+
+/* 图标 */
+.tuList {
+  margin-top: 3vh;
+  height: 17vh;
+  /* background-color: aqua; */
+  display: flex;
+  text-align: center;
+}
+.tuList > div {
+  flex: 1;
+  margin-left: 1.5rem;
+}
+
+.tuList > div:first-child {
+  flex: 1;
+  font-size: 2rem;
+  line-height: 17vh;
+  animation: 0.6s;
+}
+.tuList > div:hover {
+  /* 阴影盒子 */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
+}
+.tuList img {
+  height: 100%;
+  width: 100%;
+}
+
+/*  分割线 */
+.halving1,
+.halving2 {
+  height: 3px;
+  background-color: rgb(125, 82, 132);
+}
+.halving1 {
+  margin-top: 2.5rem;
+}
+.halving2 {
+  margin-top: 1rem;
+}
+
+/* 自我介绍 */
+.introduce {
+  height: 95vh;
+  background-image: url(https://klcxy.top/oss-manage-service/ossinfo/queryOssUrl?tbOssInfo.oiid=280);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.introduce > div:first-child {
+  margin-bottom: 5rem;
+  font-size: 3rem;
+  font-family: STHupo;
+  text-align: center;
+}
+.introduce > div:not(:first-child) {
+  color: #5e69c9;
+  font-size: 1.5rem;
+  padding-bottom: 0.8rem;
+}
+
+/*  常德介绍 */
+.cd {
+  height: 80vh;
+}
+.cti {
+  font-size: 2.5rem;
+  font-family: STHupo;
+  text-align: center;
+  line-height: 15vh;
+}
+.ctp {
+  height: 60vh;
+}
+.cd > div:last-child {
+  display: flex;
+}
+.cd > div:last-child > div:not(:nth-child(2)) {
+  flex: 1;
+}
+.cd .zi {
+  width: 20vw;
+  text-align: center;
+  color: #5e69c9;
+  font-size: 1.2rem;
+}
+.cd .zi > div {
+  margin-bottom: 2rem;
+}
+.cd img {
+  width: 100%;
+  height: 100%;
+}
+.ctp > div:not(:nth-child(2)):hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+/* // 留言板 */
+.ban {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.guestBook {
+  line-height: 20vh;
+  font-size: 2.5rem;
+  font-family: STHupo;
+}
+.dian {
+  display: flex;
+  height: 6rem;
+  width: 24rem;
+  border-radius: 10px;
+  border: 1px black solid;
+  justify-content: center;
+  align-items: center;
+}
+.dian img {
+  height: 80%;
+}
+
+/* 小🐕提示 */
+.shi {
+  margin-left: 1.5vw;
+  width: 8rem;
+  box-shadow: 0 0 10px #5e69c9;
+  margin-top: 10vh;
+  margin-bottom: 0.5rem;
+}
+/* 小狗图片集 */
+.goTu {
+  display: flex;
+  height: 14rem;
+}
+.goTu > a:not(:first-child) {
+  margin-left: 1rem;
+}
+.goTu>a{
+  display: block;
+  flex: 1;
+}
+.goTu > a:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
+}
+.goTu img {
+  height: 100%;
+  width: 100%;
+}
+/* 感谢信 */
+.xie {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: right;*/
+  align-items: flex-end;
+}
+.fe {
+  margin-top: 10vh;
+  width: 28vw;
+  font-size: 1.8rem;
+}
+.web {
+  display: block;
+  font-size: 2rem;
+}
+
+/* 分隔线 */
+.fen {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.fen>div{
+  height: 2px;
+  background-color: rgb(125, 82, 132);
+  width: 28vw;
+  margin-top: 0.5rem;
+}
+.bei{
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 1.5rem;
+}

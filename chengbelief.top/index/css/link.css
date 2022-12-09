@@ -1,0 +1,45 @@
+body{
+  position: relative;
+}
+.flex-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  
+}
+.flex-li{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-evenly ;
+  width: 100%;
+}
+.flex-li>div{
+  width: 16%;
+  margin:4rem  ;
+  margin-top: 0rem;
+}
+.flex-li>div img{
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .flex-li>div{
+    width: 96%;
+    margin:4rem ;
+    margin-top: 0rem;
+  }
+}   
+body {
+  --color-text: #0f070a;
+  --color-bg: #fff;
+  --color-bg-2: #ecc7d5;
+  --color-link: #4062bb;
+  --color-link-hover: #52489c;
+  background: radial-gradient(
+    ellipse at 75% 0,
+    var(--color-bg) 50%,
+    var(--color-bg-2) 250%
+  );
+}

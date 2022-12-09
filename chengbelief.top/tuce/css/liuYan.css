@@ -1,0 +1,45 @@
+.ltu{
+  width: 10rem;
+  height: 10rem;
+  background-image: url(https://klcxy.top/oss-manage-service/ossinfo/queryOssUrl?tbOssInfo.oiid=232);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.lban{
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+.fle{
+  display: flex;
+  justify-content: center;
+}
+
+/* 输入框  */
+.in{
+
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+.zong{
+  margin-top: 2rem;
+}
+.fa{
+  margin-left: 2rem ;
+  width: 4rem;
+  height: 4rem;
+}
+.fa img{
+  padding-top: 0.9rem;
+  width: 100%;
+  height: 100%;
+}
+.kong{
+  height: 70vh;
+  background-image: url(https://klcxy.top/oss-manage-service/ossinfo/queryOssUrl?tbOssInfo.oiid=229);
+  background-size: cover;
+}

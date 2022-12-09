@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://klcxy.top/oss-manage-service/ossinfo/queryOssUrl?tbOssInfo.oiid=360" rel="shortcut icon" type="favicon.ico">
+  <title>友情链接</title>
+
+  <!-- 导入导航条样式
+  
+  -->
+  <link rel="stylesheet" href="../css/vendors.css">
+  <link rel="stylesheet" href="../css/component.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/index.css ">
+  <link rel="stylesheet" href="../css/link.css">
+</head>
+
+<body>
+  <!-- 导航条 -->
+  <div class="heard" id="heard">
+    <div class="ti1">Belief</div>
+    <div>
+      <nav class="cl-effect-21">
+        <a href="../../index.html" id="sho">首页</a>
+        <a href="./project.html">项目</a>
+        <a href="./experience.html">重要经历</a>
+        <a href="javascript:void(0);">友情链接</a>
+        <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#exampleModal">联系我</a>
+      </nav>
+    </div>
+  </div>
+    <!-- 弹框 -->
+    <div  class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" style="margin: 0 auto;" id="exampleModalLabel">联系我</h4>
+          </div>
+          <!-- 主体部分 -->
+          <div class="modal-body " >
+            <div class="input-group mb-3">
+              <span class="input-group-text"  id="basic-addon1" >姓名</span>
+              <input type="text" class="form-control" placeholder="姓名" aria-label="Username" aria-describedby="basic-addon1"  v-model="messageDao.name">
+              <span class="input-group-text" id="basic-addon1">联系电话</span>
+              <input type="text" class="form-control" placeholder="电话" aria-label="Username" aria-describedby="basic-addon1"  v-model="messageDao.phone">
+            </div>
+            <div class="form-floating mb-3">
+              <textarea type="email" class="form-control" style="height: 10rem;" id="floatingInput" rows="10" v-model="messageDao.message"></textarea>
+              <label for="floatingInput">留言
+              </label>
+            </div>
+            
+          </div>
+  
+          <div class="modal-footer" style="display: flex; justify-content: space-around;">
+              <!-- 单击执行方法无效 -->
+            <button type="button" id="btnAdd" class="btn btn-primary"  @click="alert('次接口由于第一次尝试出现了问题暂时不能使用')" data-bs-dismiss="modal">添加</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- 压力 -->
+  <div class="flex-box">
+    <!-- 让元素居中 -->
+    <div class="flex-li">
+
+
+      <div class="card">
+        <div class="card-header">帅兰珺</div>
+
+        <div class="card-body" style="background-color: rgba(171,235,187,0.4);">
+          <img src="https://klcxy.top/oss-manage-service/ossinfo/queryOssUrl?tbOssInfo.oiid=361" class="card-img-top" alt="...">
+        </div>
+        <div class="card-footer">
+          <a href="https://shuailanjun.top/" class="btn btn-primary">立即前往</a>
+        </div>
+
+      </div>
+
+      <div class="card">
+        <div class="card-header">老胡</div>
+
+        <div class="card-body" style="background-color: rgba(171,235,187,0.4);">
+          <img src="https://klcxy.top/oss-manage-service/ossinfo/queryOssUrl?tbOssInfo.oiid=362" class="card-img-top" alt="...">
+        </div>
+        <div class="card-footer">
+          <a href="https://huhuiyu.top/" class="btn btn-primary">立即前往</a>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+  <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/vendors.js"></script>
+  <script src="../js/demo2.js"></script>
+  <script>
+    let tt ;
+    tt = document.getElementsByTagName('canvas');
+   
+    function t() {
+      tt[0].style.width = "100%";
+    }
+    t();
+    window.onresize = function () {
+      t();
+    }
+  </script>
+   <!-- 实现接口功能 -->
+   <!-- 接口实现成功 也可以对数据库进行操作 但疑似遇到跨域问题 vue 只在主页修改 -->
+   <script src="../lib/qs.min.js"></script>
+   <script src="../lib/axios.min.js"></script>
+   <script src="../lib/vue.js"></script>
+   <script src="../js/tan.js"></script>
+</body>
+
+</html>

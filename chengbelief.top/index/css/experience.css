@@ -1,0 +1,22 @@
+html{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family:  sans-serif;
+}
+ 
+canvas{
+  margin: 0;
+  padding: 0;
+  display: block; 
+  touch-action: none; 
+}
+.flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.cbp_tmtimeline>li{
+  margin-bottom: 5rem;
+}

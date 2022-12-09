@@ -1,0 +1,136 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.zhu {
+  width: 65rem;
+  margin: 0 auto;
+}
+
+.ti1 {
+  font-size: 1.5rem;
+  line-height: 5rem;
+  font-weight: bold;
+}
+.heard,.heards{
+  width: 100%;
+  /* min-width: 1000px; */
+  display: flex;
+  background-color: rgb(171, 235, 187);
+  justify-content: space-evenly;
+}
+.heards{
+  height: 3.52rem;
+  align-items: center;
+}
+#heards-a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.4);
+}
+nav a {
+  margin: 15px 15px;
+  font-size: 1.2rem;
+}
+
+/* 自我介绍 */
+.introduce {
+  margin-top: 1.25rem;
+  height: 41.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.right_text {
+  flex: 1;
+}
+.left_img {
+  flex: 0.75;
+  height: 100%;
+  background-image: url('https://klcxy.top/oss-manage-service/ossinfo/queryOssUrl?tbOssInfo.oiid=406');
+  background-size: 100% 100%;
+}
+/* 字体2 */
+.ti2 {
+  color: #309b80;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.ti3 {
+  font-size: 0.9rem;
+  margin-bottom: 3rem;
+}
+
+.xian{
+  display: none;
+  
+}
+
+.kuan{
+  border:solid #000 2px;
+  display: flex;
+  flex-direction: column;
+  width: 11rem;
+  border-radius: 8px;
+  align-items: flex-start;
+  padding: 0.4rem;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.kuan::before{
+  content: "";
+  position: absolute;
+  border: 3px solid #000;
+  width: 20px;
+  height: 20px;
+  top: 4.5rem;
+  left: 7rem;
+  border-radius: 50%;
+}
+
+.kuan::after{
+  content: "";
+  position: absolute;
+  border: 3px solid #000;
+  width: 20px;
+  height: 20px;
+  top: 6.5rem;
+  left: 6rem;
+  border-radius: 50%;
+}
+
+/* 媒体查询 */
+@media screen and (max-width: 768px) {
+
+  nav a {
+    margin: 4px 2px;
+  }
+  .heard {
+    flex-direction: column;
+    align-items: center;
+  }
+  .left_img{
+    display:none;
+  }
+  .zhu{
+    width: 80%;
+  }
+  .introduce {
+    height: 23.5rem;
+  }
+  #sho{
+    display: none;
+  }
+  .xian{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .xian img{
+    height: 100%;
+    width: auto;
+    display: block;
+  }
+}   

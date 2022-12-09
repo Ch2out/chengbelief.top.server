@@ -1,0 +1,25 @@
+body{
+  margin:  0px;
+  
+
+}
+.te{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.zhu{
+  font-size: 15rem;
+  text-align: center;
+  font-family:  YouYuan; 
+  background-size: 25%;
+  background-position:center;
+  /* background-repeat: no-repeat; */
+  background-image: url(https://klcxy.top/oss-manage-service/ossinfo/queryOssUrl?tbOssInfo.oiid=294);
+}
+.te{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}

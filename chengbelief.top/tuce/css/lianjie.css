@@ -1,0 +1,9 @@
+.wait{
+  font-size: 5rem;
+}
+.bao{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
