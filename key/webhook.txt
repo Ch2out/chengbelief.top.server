@@ -1,0 +1,9 @@
+[
+  {
+    "id":"pull_website",
+    "execute-command":"/home/chenghan/webhook/pull_website.sh",
+    "command-working-directory":"/home/chenghan/webhook"
+  }
+]
+
+webhook -port 15000 -hooks /home/chenghan/webhook/webhook.config.json -verbose

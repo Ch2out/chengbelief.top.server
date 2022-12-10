@@ -1,0 +1,8 @@
+mysql
+  root MySQL4user
+  chenghan User4-mysql
+  
+redis User4-redis
+
+root abcd-1234
+chenghan abcd-1234
