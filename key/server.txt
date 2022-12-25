@@ -8,3 +8,10 @@ root abcd-1234
 chenghan abcd-1234
 
 ptykebrffeqlecfi 邮箱授权验证码
+
+阿里云
+AccessKeyId
+LTAI5tDXNpr2DJboP23LbJr2
+
+AccessKeySecret
+3cfjcKJABTJRuiTyIUEZkcaH45PW8A
