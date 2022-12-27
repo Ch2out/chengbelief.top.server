@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" onselectstart="return false">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <META NAME="keywords" CONTENT="程瀚,chengbelief,程瀚的网站">
   <link href="https://klcxy.top/oss-manage-service/ossinfo/queryOssUrl?tbOssInfo.oiid=360" rel="shortcut icon" type="favicon.ico">
   <title>学习ansast</title>
-  
+
   <!-- 导航条映入的第三方css -->
   <link rel="stylesheet" href="./index/css/component.css">
   <!-- 导入bootstrapcss -->
@@ -14,7 +16,8 @@
   <link rel="stylesheet" href="./index/css/index.css">
 
 </head>
-<body> 
+
+<body>
   <!-- 加载 -->
 
   <!-- 导航条 -->
@@ -30,44 +33,44 @@
       </nav>
     </div>
   </div>
-   <!-- 联系我对应的弹出框 -->
-   <!-- 通过vue接管整个弹出框 重改 -->
-  <div  class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- 联系我对应的弹出框 -->
+  <!-- 通过vue接管整个弹出框 重改 -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
           <h4 class="modal-title" style="margin: 0 auto;" id="exampleModalLabel">联系我</h4>
         </div>
         <!-- 主体部分 -->
-        <div class="modal-body " >
+        <div class="modal-body ">
           <div class="input-group mb-3">
-            <span class="input-group-text"  id="basic-addon1" >姓名</span>
-            <input type="text" class="form-control" placeholder="姓名" aria-label="Username" aria-describedby="basic-addon1"  v-model="messageDao.name">
+            <span class="input-group-text" id="basic-addon1">姓名</span>
+            <input type="text" class="form-control" placeholder="姓名" aria-label="Username" aria-describedby="basic-addon1" v-model="messageDao.name">
             <span class="input-group-text" id="basic-addon1">联系电话</span>
-            <input type="text" class="form-control" placeholder="电话" aria-label="Username" aria-describedby="basic-addon1"  v-model="messageDao.phone">
+            <input type="text" class="form-control" placeholder="电话" aria-label="Username" aria-describedby="basic-addon1" v-model="messageDao.phone">
           </div>
           <div class="form-floating mb-3">
             <textarea type="email" class="form-control" style="height: 10rem;" id="floatingInput" rows="10" v-model="messageDao.message"></textarea>
             <label for="floatingInput">留言
             </label>
           </div>
-          
+
         </div>
 
         <div class="modal-footer" style="display: flex; justify-content: space-around;">
-            <!-- 此接口出现问题 -->
+          <!-- 此接口出现问题 -->
           <button type="button" id="btnAdd" class="btn btn-primary" @click="alert('次接口由于第一次尝试出现了问题暂时不能使用')" data-bs-dismiss="modal">添加</button>
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
         </div>
       </div>
     </div>
   </div>
-  
 
 
- 
-  
-<!-- 自我介绍 -->
+
+
+
+  <!-- 自我介绍 -->
   <div class="introduce zhu">
     <div class="right_text">
       <div>
@@ -77,7 +80,7 @@
         <h2> 我是程瀚 这个网站的管理者</h2>
       </div>
       <div class="ti2">
-        <span class="element" style="font-size: 1.2rem;"></span>       
+        <span class="element" style="font-size: 1.2rem;"></span>
       </div>
       <div class="ti3">
         <div>我熟悉HTML5 & css & javascript</div>
@@ -86,7 +89,7 @@
         <div>可以通过QQ:1514027854联系我</div>
       </div>
     </div>
-<!-- 图片部分 -->
+    <!-- 图片部分 -->
     <div class="left_img">
     </div>
   </div>
@@ -94,29 +97,30 @@
     通过手机端实现悬停功能
     提示功能
    -->
-   <div class="xian">
-      <div class="kuan">
-        <div>在我的项目和经历中</div>
-        <div>更多了解我一点吧!</div>
-      </div>
-      <img src="https://klcxy.top/oss-manage-service/ossinfo/queryOssUrl?tbOssInfo.oiid=360" alt="">
-   </div>
+  <div class="xian">
+    <div class="kuan">
+      <div>在我的项目和经历中</div>
+      <div>更多了解我一点吧!</div>
+    </div>
+    <img src="https://klcxy.top/oss-manage-service/ossinfo/queryOssUrl?tbOssInfo.oiid=360" alt="">
+  </div>
 
 
-   <div class="heards">
-     <a id="heards-a" href="https://beian.miit.gov.cn/" target="_blank">湘ICP备2021015913号-1</a></a>
-   </div>
+  <div class="heards">
+    <a id="heards-a" href="https://beian.miit.gov.cn/" target="_blank">湘ICP备2021015913号-1</a></a>
+  </div>
 
 
-<script src="./index/js/bootstrap.bundle.min.js"></script>
-<script src='./index/js/jquery-1.11.0.min.js'></script>
-<script src='./index/js/typed.js'></script>
+  <script src="./index/js/bootstrap.bundle.min.js"></script>
+  <script src='./index/js/jquery-1.11.0.min.js'></script>
+  <script src='./index/js/typed.js'></script>
 
-   <!-- 实现接口功能 -->
-   <!-- 接口实现成功 也可以对数据库进行操作 但疑似遇到跨域问题 vue 只在主页修改 -->
-   <script src="./index/lib/qs.min.js"></script>
-   <script src="./index/lib/axios.min.js"></script>
-   <script src="./index/lib/vue.js"></script>
-   <script src="./index/js/tan.js"></script>
+  <!-- 实现接口功能 -->
+  <!-- 接口实现成功 也可以对数据库进行操作 但疑似遇到跨域问题 vue 只在主页修改 -->
+  <script src="./index/lib/qs.min.js"></script>
+  <script src="./index/lib/axios.min.js"></script>
+  <script src="./index/lib/vue.js"></script>
+  <script src="./index/js/tan.js"></script>
 </body>
+
 </html>
